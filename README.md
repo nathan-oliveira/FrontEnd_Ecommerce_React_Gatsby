@@ -97,3 +97,8 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/gatsbyjs/gatsby-starter-default)
 
 <!-- AUTO-GENERATED-CONTENT:END -->
+
+## Images Credits
+<a href='https://www.freepik.com/free-photos-vectors/banner'>Banner psd created by freepik - www.freepik.com</a>
+
+Products image: www.myntra.com
