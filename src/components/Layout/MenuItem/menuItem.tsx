@@ -1,7 +1,12 @@
 import React from "react"
 import { Link } from "gatsby"
 
-export default props => (
+interface PropsType {
+  path: string;
+  label: string;
+}
+
+export default (props: PropsType) => (
   <li>
     <Link to={props.path}>
       {props.label}

@@ -1,7 +1,9 @@
 import React from "react"
 import "./footer.scss"
 
-export default props => (
+interface PropsType {}
+
+export default (props: PropsType) => (
   <footer>
     <h3>Footer</h3>
   </footer>

@@ -1,9 +1,13 @@
 import React from "react"
 import MenuItem from '../MenuItem/menuItem'
 
-export default props => (
+interface PropsType {
+  toggle: boolean;
+}
+
+export default (props: PropsType) => (
   <nav>
-    <ul className={props.toggle ? "toggleOff": "toggleOn"} id="MenuItems">
+    <ul className={props.toggle ? "toggleOn": "toggleOff"} id="MenuItems">
       <MenuItem path='/' label='Home' />
       <MenuItem path='/' label='Products' />
       <MenuItem path='/' label='About' />

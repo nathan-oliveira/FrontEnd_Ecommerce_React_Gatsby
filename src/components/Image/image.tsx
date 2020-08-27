@@ -2,7 +2,11 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-export default props => {
+interface PropsType {
+  name: string
+}
+
+export default (props: PropsType) => {
   const data = useStaticQuery(graphql`
     query {
       menu: file(relativePath: { eq: "menu.png" }) {

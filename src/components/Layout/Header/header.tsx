@@ -6,24 +6,30 @@ import Nav from "../Nav/nav"
 
 import "./header.scss"
 
-class Header extends Component {
-  constructor(props) {
+interface Props {}
+
+interface State {
+  toggle: boolean;
+}
+
+class Header extends Component<Props, State> {
+  constructor(props: Props) {
     super(props)
 
     this.menuToggle = this.menuToggle.bind(this);
   }
 
-  state = { 
-    toggle: true 
+  state: State = { 
+    toggle: false
   }
   
-  menuToggle() {
-    this.setState({ toggle: !this.state.toggle })
-  }
+  menuToggle = () => {
+    this.setState({
+      toggle: !this.state.toggle
+    });
+  };
 
   render() {
-    const { toggle } = this.state
-
     return (
       <header>
         <div className="backgroundBar">
@@ -34,7 +40,7 @@ class Header extends Component {
                   <Img name="logo" />
                 </Link>
               </div>
-              <Nav toggle={toggle} />
+              <Nav toggle={this.state.toggle} />
               <Link to="/">
                 <Img name="cart" />
               </Link>
