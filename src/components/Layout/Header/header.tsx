@@ -58,7 +58,7 @@ class Header extends Component<Props, State> {
               <Link to="/" className="btn">Explore Now &#8594;</Link>
             </div>
 
-            <div className="col-2">
+            <div className="col-2 imageHeader">
               <Img name="image1" />
             </div>
           </div>

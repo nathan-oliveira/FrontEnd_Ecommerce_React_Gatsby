@@ -6,7 +6,7 @@ header {
   }
 
   .row {
-    margin-top: 70px;
+    margin-top: 130px;
   }
 
   .navbar {
@@ -72,10 +72,15 @@ p {
 .col-2 {
   flex-basis: 50%;
   min-width: 300px;
+  margin-bottom: 42px !important;
 
-  .image-header, img {
-    max-width: 100%;
-    padding: 50px 0;
+
+  .imageHeader {
+    img {
+      width: auto !important;
+      max-width: 100%;
+      padding: 50px 0;
+    }
   }
 
   h1 {
