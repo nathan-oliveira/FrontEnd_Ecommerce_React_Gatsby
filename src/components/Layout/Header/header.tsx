@@ -50,7 +50,7 @@ class Header extends Component<Props, State> {
             </div>
           </div>
         </div>
-        <div className="container">
+        <main className="container">
           <div className="row">
             <div className="col-2">
               <h1>Give Your Workout<br /> A new Style!</h1>
@@ -62,7 +62,7 @@ class Header extends Component<Props, State> {
               <Img name="image1" />
             </div>
           </div>
-        </div>
+        </main>
       </header>
     )
   }
